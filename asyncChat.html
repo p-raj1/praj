@@ -1,0 +1,19 @@
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DQZ000000EiZ3',
+				'LLAgents_MIAW_Flow_PreChat_Bot',
+				'https://pratiksaishubh.test2.my.pc-rnd.site.com/ESWLLAgentsMIAWFlowPre1708729756959',
+				{
+					scrt2URL: 'https://pratiksaishubh.test2.my.pc-rnd.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://pratiksaishubh.test2.my.pc-rnd.site.com/ESWLLAgentsMIAWFlowPre1708729756959/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
